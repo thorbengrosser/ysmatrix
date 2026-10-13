@@ -29,7 +29,7 @@ firmware `V2.9.1#V16`, controlled by the *LOY PLAY* app. Other panels and firmwa
 | Device info, panel size | ✅ | |
 | Read power/brightness/rotation | ✅ | |
 | Rotation | ✅ | Absolute value n×90° clockwise, stored on the panel; the test panel's upright is `2` |
-| Set/read clock | ✅ | |
+| Set/read clock | ✅ | The clock is **not kept across power-off** (reads 2000-01-01 after a restart); run `sync-time` after powering on |
 | Scrolling and static text | ✅ | Rendered by the panel's own font; colours correct; sizes 8 and 16 tested |
 | Live clock (text with time fields) | ✅ | The panel keeps it ticking |
 | Live drawing (rectangles, pixels, 1-bit bitmaps) | ✅ | Only renders immediately in drawing mode (game 16); ~30 fps fire-and-forget |

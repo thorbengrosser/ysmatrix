@@ -143,12 +143,15 @@ async def run(args: argparse.Namespace) -> None:
         if c == "info":
             info = await panel.get_device_info()
             w, h = await panel.get_size()
-            print(f"model       {info.model}\nfirmware    {info.firmware}\nserial      {info.serial}")
-            print(f"size        {w}x{h}\ncapabilities {', '.join(info.capabilities)}")
-            print(f"power       {await panel.get_power()}\nbrightness  {await panel.get_brightness()}")
-            print(f"rotation    {await panel.get_rotation()}\nclock       {await panel.get_time()}")
-            slots = await panel.list_slots()
-            print(f"slots       {', '.join(str(s.slot) for s in slots) or 'none'}")
+            rows = [
+                ("model", info.model), ("firmware", info.firmware), ("serial", info.serial),
+                ("size", f"{w}x{h}"), ("capabilities", ", ".join(info.capabilities)),
+                ("power", await panel.get_power()), ("brightness", await panel.get_brightness()),
+                ("rotation", await panel.get_rotation()), ("clock", await panel.get_time()),
+                ("slots", ", ".join(str(s.slot) for s in await panel.list_slots()) or "none"),
+            ]
+            for label, value in rows:
+                print(f"{label:<13}{value}")
         elif c == "power":
             await panel.set_power(args.state == "on")
         elif c == "brightness":

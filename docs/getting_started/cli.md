@@ -23,7 +23,7 @@ ysmatrix power on
 ysmatrix brightness 8                 # 1-15
 ysmatrix rotate                       # show the current rotation
 ysmatrix rotate 2                     # n x 90 degrees clockwise; stored on the panel
-ysmatrix sync-time                    # set the panel clock to this computer's time
+ysmatrix sync-time                    # set the panel clock to this computer's time (it resets on power-off)
 ```
 
 ## Content
