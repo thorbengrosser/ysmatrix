@@ -19,7 +19,8 @@ ysmatrix info                         # model, firmware, size, settings, stored 
 ## Settings
 
 ```bash
-ysmatrix power on
+ysmatrix power off                   # display dark; content stays stored
+ysmatrix power on                    # showing content (image, text, play, loop) also switches it on
 ysmatrix brightness 8                 # 1-15
 ysmatrix rotate                       # show the current rotation
 ysmatrix rotate 2                     # n x 90 degrees clockwise; stored on the panel

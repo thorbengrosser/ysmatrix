@@ -24,6 +24,8 @@ If `ysmatrix info` gets no answer, your device is probably one of those.
 
 ## Tested
 
+<img src="assets/led_backpack_photo.jpg" width="320" alt="The tested 64x64 LED backpack showing a picture sent with ysmatrix">
+
 | Device | Size | Model | Firmware | Result |
 |---|---|---|---|---|
 | LED backpack | 64×64 | `EXYB-AS#GGMJXZ180` | `V2.9.1#V16` | Everything marked ✅ in [status.md](status.md) |

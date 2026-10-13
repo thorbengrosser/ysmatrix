@@ -1,5 +1,10 @@
 # ysmatrix
 
+<p align="center">
+  <img src="assets/all_your_base_demo.gif" width="300" alt="Animated GIF on a 64x64 LED backpack">
+  <img src="assets/led_backpack_photo.jpg" width="300" alt="Picture on the same backpack">
+</p>
+
 Unofficial Python library and command-line tool for the Bluetooth RGB LED matrix panels that
 advertise as `YS…`/`TL…` (64×64 LED backpacks, bag panels), normally used with the LOY PLAY /
 LOY SPACE apps.

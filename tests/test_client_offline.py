@@ -39,8 +39,9 @@ def test_send_image_uploads_then_plays():
     asyncio.run(c.send_image(Image.new("RGB", (32, 20), (255, 0, 0)), slot=5))
     sent = c.conn.sent
     assert sent[0][:4] == bytes([cmd.TAG_DELETE, 2, 0, 5])
-    assert sent[-2][0] == cmd.TAG_PROGRAM_KEY and sent[-1] == cmd.play(5)
-    blob = b"".join(dict(framing.parse_tlvs(p))[cmd.TAG_CHUNK_DATA] for p in sent[2:-2])
+    assert sent[-3][0] == cmd.TAG_PROGRAM_KEY
+    assert sent[-2:] == [cmd.power(True), cmd.play(5)]  # showing switches the display on
+    blob = b"".join(dict(framing.parse_tlvs(p))[cmd.TAG_CHUNK_DATA] for p in sent[2:-3])
     assert blob[:6] == b"YSTP01" and blob[6:10] == bytes([64, 0, 64, 0])  # resized to the panel
 
 

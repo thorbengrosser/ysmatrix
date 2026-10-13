@@ -10,5 +10,6 @@
 | Drawings appear only every few seconds | Drawing outside drawing mode | Use `panel.drawing()` (or `ysmatrix fill`) |
 | Random pixels when drawing fast | Fire-and-forget frames sent with no pause | Keep the default `unacked_gap` (20 ms) |
 | Picture looks rotated | Rotation is a stored setting | `ysmatrix rotate` to see it, `ysmatrix rotate <n>` to fix |
+| Display stays dark after `power off` | Power-off is separate from what is shown | Showing anything (`image`, `text`, `play`, `loop`…) switches it back on; or `ysmatrix power on` |
 | Clock shows the wrong time after a restart | The panel forgets the time when switched off | `ysmatrix sync-time` (or `panel.set_time()`) after powering on |
 | A built-in game shows `START` and nothing happens | It waits for the start key | Press `s` in `ysmatrix game`, or `game_key("start")` |

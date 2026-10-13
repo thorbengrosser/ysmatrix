@@ -41,8 +41,8 @@
 | `send_clock(fmt="{hh}:{mm}:{ss}", slot=0, color, size=16, set_time=True, align, valign, show=True)` | fields `{YYYY} {YY} {MM} {DD} {hh} {mm} {ss}` |
 | `show_builtin_clock(style=0, color)` | |
 | `delete_slot(slot)` | |
-| `play(slot)` | show one slot |
-| `play_loop(slots)` | cycle through slots |
+| `play(slot, power_on=True)` | show one slot (switches the display on first) |
+| `play_loop(slots, power_on=True)` | cycle through slots |
 
 `resize`: `Resize.FIT` (pad), `Resize.FILL` (crop), `Resize.STRETCH`.
 

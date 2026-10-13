@@ -15,3 +15,6 @@ site/
 *.pklg
 *.btsnoop
 *.log
+# large 8x previews written by examples/make_demo_images.py
+*_preview.png
+*_preview.gif

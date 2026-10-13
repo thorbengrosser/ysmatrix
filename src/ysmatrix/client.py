@@ -204,12 +204,16 @@ class AsyncClient:
 
     # --- playback ------------------------------------------------------------------------
 
-    async def play(self, slot: int) -> None:
-        """Show one stored slot."""
+    async def play(self, slot: int, *, power_on: bool = True) -> None:
+        """Show one stored slot. Switches the display on first (a powered-off panel stays dark otherwise)."""
+        if power_on:
+            await self.power_on()
         await self.send(cmd.play(slot))
 
-    async def play_loop(self, slots: Iterable[int]) -> None:
+    async def play_loop(self, slots: Iterable[int], *, power_on: bool = True) -> None:
         """Cycle through stored slots; each shows for the play time it was uploaded with."""
+        if power_on:
+            await self.power_on()
         await self.send(cmd.play_loop(slots))
 
     # --- live drawing --------------------------------------------------------------------
