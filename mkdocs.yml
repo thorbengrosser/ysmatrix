@@ -1,0 +1,20 @@
+site_name: ysmatrix
+site_description: Unofficial Python library and CLI for YS/TL Bluetooth LED matrix panels
+repo_url: https://github.com/thorbengrosser/ysmatrix
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - tables
+nav:
+  - Home: index.md
+  - Devices: devices.md
+  - Getting started:
+      - Installation: getting_started/installation.md
+      - Command line: getting_started/cli.md
+      - Library: getting_started/library.md
+  - API reference: reference.md
+  - What we know: status.md
+  - Protocol: protocol.md
+  - Troubleshooting: troubleshooting.md
+  - Reverse engineering: reverse_engineering.md
