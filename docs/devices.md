@@ -46,8 +46,12 @@ The same kind of panel is sold by many brands, usually as a "LED backpack", "pix
 | [SASKATE Full Color LED Backpack](https://www.amazon.ca/Color-Backpack-Screen-Customizable-Animation/dp/B0F7J34Y2D) | LOY SPACE | 64×64 | 🟡 Possibly working |
 | Kemimoto LED Backpack ([setup video](https://www.youtube.com/watch?v=T7WNSyI1ML4)) | LOY SPACE | | 🟡 Possibly working |
 | Unbranded "LOY LED Backpack" listings (e.g. [Curacao](https://icuracao.com/products/loy-led-backpack), [eBay](https://www.ebay.com/itm/235373614884)) | LOY / LOY SPACE | 64×64 (some 48×48) | 🟡 Possibly working |
-| "Knight" backpacks with LED eyes (e.g. [LOY Bags Knight](https://www.loybags.com.au/), [KWQ Rainbow Knight](https://www.amazon.com/Smart-Backpack-School-Laptop-Christmas/dp/B0C8K17LP3)) | LOY EYES | eyes only | ❔ Not covered |
+| "Knight" backpacks with LED eyes (e.g. [LOY Bags Knight](https://www.loybags.com.au/), [KWQ Rainbow Knight](https://www.amazon.com/Smart-Backpack-School-Laptop-Christmas/dp/B0C8K17LP3)) | LOY EYES | eyes only | ❔ Not covered; try [pypixelcolor](https://github.com/lucagoc/pypixelcolor) |
 | Backpacks with their own apps (e.g. Divoom, PIX) | own app | | ❔ Not covered |
+
+**Looking for LOY EYES (LED-eyes bags)?** ysmatrix does not speak their protocol. They may be
+iPixel-style devices, which [pypixelcolor](https://github.com/lucagoc/pypixelcolor) supports. This
+is unconfirmed, but it is the place to look.
 
 The "T3" name turns up under several brands (Taysem, BIOSLED, LOY Bags), so these are probably
 the same bag from one factory. Links are to listings found online in October 2026 and may

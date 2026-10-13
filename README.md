@@ -95,7 +95,8 @@ These panels are sold under many brand names. If the seller tells you to use the
 |---|---|
 | Urbanfeel LED Backpack "Umeko" (64×64) | ✅ Tested (firmware `V2.9.1#V16`) |
 | Gelrova, Taysem (T3), BIOSLED (T3-1), LOY Bags T3-HD, SASKATE, Kemimoto, unbranded "LOY LED backpacks" | 🟡 Possibly working (same apps, not tried yet) |
-| "Knight" backpacks with LED eyes (LOY EYES app), Divoom, PIX | ❔ Not covered |
+| "Knight" backpacks with LED eyes (LOY EYES app) | ❔ Not covered; have a look at [pypixelcolor](https://github.com/lucagoc/pypixelcolor) |
+| Divoom, PIX | ❔ Not covered (own apps) |
 
 The full list with links, and how to check yours: [docs/devices.md](docs/devices.md). Tried one?
 Please [send a device report](https://github.com/thorbengrosser/ysmatrix/issues/new?template=device_report.md).
