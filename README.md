@@ -138,6 +138,12 @@ Feedback is very welcome, from a one-line "works on my panel" to a full pull req
 
 Please do not add vendor apps, decompiled code or raw captures to the repository.
 
+## Thanks
+
+Thanks to [pypixelcolor](https://github.com/lucagoc/pypixelcolor) by Lucas Balmès, a library for
+iPixel Color LED matrices. Its clear structure, documentation and CLI were the inspiration for how
+this project is put together.
+
 ## Disclaimer
 
 Not affiliated with or endorsed by the maker of the panels or of the LOY PLAY / LOY SPACE apps.
