@@ -88,9 +88,17 @@ An `AsyncClient` with the same methods exists for asyncio. See
 
 ## Supported devices
 
-Tested on a 64×64 LED backpack (model `EXYB-AS#GGMJXZ180`, firmware `V2.9.1#V16`). Other panels
-using the LOY PLAY / LOY SPACE apps are probably compatible; the panel reports its own size. See
-[docs/devices.md](docs/devices.md) for how to check yours.
+These panels are sold under many brand names. If the seller tells you to use the **LOY PLAY** or
+**LOY SPACE** app, it is probably compatible.
+
+| Product | Status |
+|---|---|
+| Urbanfeel LED Backpack "Umeko" (64×64) | ✅ Tested (firmware `V2.9.1#V16`) |
+| Gelrova, Taysem (T3), BIOSLED (T3-1), LOY Bags T3-HD, SASKATE, Kemimoto, unbranded "LOY LED backpacks" | 🟡 Possibly working (same apps, not tried yet) |
+| "Knight" backpacks with LED eyes (LOY EYES app), Divoom, PIX | ❔ Not covered |
+
+The full list with links, and how to check yours: [docs/devices.md](docs/devices.md). Tried one?
+Please [send a device report](https://github.com/thorbengrosser/ysmatrix/issues/new?template=device_report.md).
 
 ## What works, what doesn't
 
