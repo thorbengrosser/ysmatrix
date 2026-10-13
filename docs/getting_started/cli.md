@@ -65,6 +65,11 @@ ysmatrix game snake
 
 `raw` sends any payload in hex; see [the protocol reference](../protocol.md).
 
+!!! warning
+    `raw` sends whatever you type, including commands nobody has tested. Unknown commands could
+    change stored settings or, in the worst case, leave the panel unusable. Stick to commands
+    documented in the protocol reference unless you accept that risk.
+
 ```bash
 ysmatrix raw 06 02 00 0f              # brightness 15
 ysmatrix raw 0a00 --query             # device info, raw

@@ -19,6 +19,15 @@ its built-in games.
 The protocol was reverse-engineered from scratch. This README and [docs/status.md](docs/status.md)
 say exactly what is proven, what is guessed and what is unknown.
 
+> [!WARNING]
+> **Unofficial and reverse-engineered.** ysmatrix is not made, endorsed or supported by the maker
+> of these panels or of the LOY PLAY / LOY SPACE apps. The protocol was worked out by observation,
+> and we cannot rule out that some command could misbehave or even brick a device, especially
+> on panels and firmware we have not tested. Commands known to be risky (firmware update, password,
+> renaming) are deliberately left out, and nothing has harmed the test panel so far. Still: **use
+> it at your own risk**, start with harmless commands like `ysmatrix info`, and be careful with
+> `ysmatrix raw`.
+
 ## Features
 
 - 🖼️ **Pictures and GIFs**: stored in one of 60 slots, kept after power-off
@@ -107,17 +116,26 @@ The tests rebuild frames captured from the official app and require them to matc
 byte, so protocol changes are caught without hardware. To browse the docs as a site:
 `pip install -e '.[docs]' && mkdocs serve`.
 
-## Contributing
+## Feedback and contributing
 
-New evidence is the most useful contribution: a capture of the app doing something not covered
-yet, or a test on another panel. See [how this was reverse-engineered](docs/reverse_engineering.md).
+Feedback is very welcome, from a one-line "works on my panel" to a full pull request:
+
+- **[Open an issue](../../issues/new/choose)** for bugs, questions, or to report a device that does or does not work
+  (please include the output of `ysmatrix info`).
+- **Pull requests** are welcome too, small or large: fixes, docs, new commands, newly mapped ids.
+- The most valuable thing is **new evidence**: a capture of the official app doing something not
+  covered yet, or a test on another panel. See [how this was reverse-engineered](docs/reverse_engineering.md)
+  and [CONTRIBUTING.md](CONTRIBUTING.md).
+
 Please do not add vendor apps, decompiled code or raw captures to the repository.
 
 ## Disclaimer
 
 Not affiliated with or endorsed by the maker of the panels or of the LOY PLAY / LOY SPACE apps.
-This project contains no vendor code. Use it at your own risk; no damage was observed on the
-test panel, and commands that could lock you out are deliberately not implemented.
+This project contains no vendor code. It is provided as is, without warranty (see the license):
+the protocol is reverse-engineered, so it may behave unexpectedly or damage a device. No damage
+was observed on the test panel, and commands that could lock you out are deliberately not
+implemented. Use it at your own risk.
 
 ## License
 

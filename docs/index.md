@@ -19,6 +19,12 @@ LOY SPACE apps.
 * [Troubleshooting](troubleshooting.md)
 * [How it was reverse-engineered](reverse_engineering.md)
 
-!!! warning "Disclaimer"
-    Not affiliated with or endorsed by the maker of the LOY PLAY / LOY SPACE apps or the panels.
-    Use at your own risk.
+!!! warning "Unofficial and reverse-engineered: use at your own risk"
+    ysmatrix is not made, endorsed or supported by the maker of these panels or of the
+    LOY PLAY / LOY SPACE apps. The protocol was worked out by observation, and we cannot rule out
+    that some command could misbehave or even brick a device, especially on untested panels or
+    firmware. Risky commands (firmware update, password, renaming) are deliberately left out and
+    nothing has harmed the test panel so far. Start with `ysmatrix info` and be careful with
+    `ysmatrix raw`.
+
+Feedback is welcome: open an issue (bugs, questions, "works on my panel") or send a pull request.
